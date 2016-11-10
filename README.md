@@ -1,2 +1,2 @@
-# vvich5
+# vvic weapp demo
 vvic weapp demo
