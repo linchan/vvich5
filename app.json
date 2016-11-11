@@ -8,6 +8,14 @@
     "pages/brand/index",
     "pages/list/index"
   ],
+  "window":{
+    "backgroundTextStyle":"white",
+    "navigationBarTextStyle":"white",
+    "navigationBarTitleText": "VVIC搜款网",
+    "navigationBarBackgroundColor": "#292929",
+    "backgroundColor": "#F2f2f2",
+    "enablePullDownRefresh": true
+  },
   "tabBar": {
     "color": "#6e6d6b",
     "selectedColor": "#f9f027",
@@ -34,13 +42,6 @@
       "selectedIconPath": "images/footer-icon-04-active.png",
       "text": "我的"
     }]
-  },
-  "window":{
-    "backgroundTextStyle":"white",
-    "navigationBarBackgroundColor": "#292929",
-    "navigationBarTitleText": "VVIC搜款网",
-    "navigationBarTextStyle":"white",
-    "backgroundColor": "#F2f2f2"
   },
   "debug": true
 }

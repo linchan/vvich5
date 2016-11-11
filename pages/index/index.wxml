@@ -3,7 +3,7 @@
     <view>
         <swiper class="swiper_box" indicator-dots="{{indicatorDots}}" vertical="{{vertical}}"
                 autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperchange">
-            <block wx:for="{{images}}">
+            <block wx:key="v1" wx:for="{{images}}">
                 <swiper-item>
                     <image src="{{item.picurl}}" class="slide-image"/>
                 </swiper-item>
@@ -15,10 +15,10 @@
         <view class="line_flag"></view>
         <text>主题馆</text>
     </view>
-    
+
     <view class="venues_box">
         <view class="venues_list">
-            <block wx:for="{{venuesItems}}">
+            <block wx:key="v2" wx:for="{{venuesItems}}">
                 <view class="venues_item">
                     <navigator url="../brand/index?id={{item.id}}">
                         <image src="{{item.smallpic}}"/>
@@ -35,7 +35,7 @@
 
     <view class="choice_box">
         <view class="choice_list">
-            <block wx:for="{{choiceItems}}">
+            <block wx:key="v3" wx:for="{{choiceItems}}">
                 <navigator url="../details/index?id={{item.id}}">
                     <view class="choice_item">
                         <image src="{{item.goodspics}}"/>
