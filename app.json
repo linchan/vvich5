@@ -1,38 +1,46 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/list/list",
-    "pages/logs/logs"
+    "pages/classify/index",
+    "pages/cart/index",
+    "pages/my/index",
+    "pages/details/index",
+    "pages/brand/index",
+    "pages/list/index"
   ],
   "tabBar": {
-    "backgroundColor":"#333",
-    "selectedColor":"red",
+    "color": "#6e6d6b",
+    "selectedColor": "#f9f027",
+    "borderStyle": "white",
+    "backgroundColor": "#292929",
     "list": [{
-      "pagePath": "pages/wechat/wechat",
-      "iconPath":"image/wechat.png",
-      "selectedIconPath":"image/wechat_2.png",
-      "text": "微信"
+      "pagePath": "pages/index/index",
+      "iconPath": "images/footer-icon-01.png",
+      "selectedIconPath": "images/footer-icon-01-active.png",
+      "text": "每日新款"
     }, {
-      "pagePath": "pages/note/note",
-      "iconPath":"image/note.png",
-      "selectedIconPath":"image/note_2.png",
-      "text": "通讯录"
+      "pagePath": "pages/classify/index",
+      "iconPath": "images/footer-icon-02.png",
+      "selectedIconPath": "images/footer-icon-02-active.png",
+      "text": "分类"
     }, {
-      "pagePath": "pages/find/find",
-      "iconPath":"image/find.png",
-      "selectedIconPath":"image/find_2.png",
-      "text": "发现"
+      "pagePath": "pages/cart/index",
+      "iconPath": "images/footer-icon-03.png",
+      "selectedIconPath": "images/footer-icon-03-active.png",
+      "text": "购物车"
     }, {
-      "pagePath": "pages/mine/mine",
-      "iconPath":"image/mine.png",
-      "selectedIconPath":"image/mine_2.png",
-      "text": "我"
+      "pagePath": "pages/my/index",
+      "iconPath": "images/footer-icon-04.png",
+      "selectedIconPath": "images/footer-icon-04-active.png",
+      "text": "我的"
     }]
   },
   "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
-  }
+    "backgroundTextStyle":"white",
+    "navigationBarBackgroundColor": "#292929",
+    "navigationBarTitleText": "VVIC搜款网",
+    "navigationBarTextStyle":"white",
+    "backgroundColor": "#F2f2f2"
+  },
+  "debug": true
 }
