@@ -1,7 +1,15 @@
 <view class="container">
-  <image src="{{cartImg}}" class="cart-image"/>
-  <view>{{tipWords}}</view>
-  <block wx:key="a" wx:for="{{list}}">
-      <text>{{item.subName}}</text>
-  </block>
+    <view wx:if="{{list}}">
+        <block wx:key="cart" wx:for-item='itemShop' wx:for="{{list}}">
+            <view>{{itemShop.name}}  {{itemShop.shuName}} {{itemShop.floor}} 楼 {{itemShop.position}}</view>
+            <block wx:key="item" wx:for-item='itemGoods' wx:for='{{itemShop.item_list}}'>
+                <image src="{{itemGoods.index_img_url}}" class="cart-image"/>
+                <text>{{itemGoods.title}}</text>
+            </block>
+        </block>
+    </view>
+    <view wx:else>
+        <image src="{{cartImg}}" class="cart-image"/>
+        <view>{{tipWords}}</view>
+    </view>
 </view>

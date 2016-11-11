@@ -3,51 +3,27 @@
     <view>
         <swiper class="swiper_box" indicator-dots="{{indicatorDots}}" vertical="{{vertical}}"
                 autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperchange">
-            <block wx:key="v1" wx:for="{{images}}">
+            <block wx:key="v1" wx:for="{{imgUrls}}">
                 <swiper-item>
-                    <image src="{{item.picurl}}" class="slide-image"/>
+                    <image src="{{item}}" class="slide-image"/>
                 </swiper-item>
             </block>
         </swiper>
     </view>
 
-    <view class="text">
-        <view class="line_flag"></view>
-        <text>主题馆</text>
-    </view>
+    <view>每日新款</view>
 
-    <view class="venues_box">
-        <view class="venues_list">
-            <block wx:key="v2" wx:for="{{venuesItems}}">
-                <view class="venues_item">
-                    <navigator url="../brand/index?id={{item.id}}">
-                        <image src="{{item.smallpic}}"/>
-                    </navigator>
+    <view class="new-list">
+        <block wx:key='new' wx:for='{{list}}'>
+
+            <image class="new-list-pic" src="{{item.index_img_url}}" />
+            <view class="new-list-text">
+                <view>
+                    {{item.title}}
                 </view>
-            </block>
-        </view>
+                <view>￥{{item.discount_price}}</view>
+            </view>
+        </block>
     </view>
-
-    <view class="text">
-        <view class="line_flag"></view>
-        <text>环球精选</text>
-    </view>
-
-    <view class="choice_box">
-        <view class="choice_list">
-            <block wx:key="v3" wx:for="{{choiceItems}}">
-                <navigator url="../details/index?id={{item.id}}">
-                    <view class="choice_item">
-                        <image src="{{item.goodspics}}"/>
-                        <view class="title">{{item.title}}</view>
-                    </view>
-                </navigator>
-            </block>
-        </view>
-    </view>
-
-    <loading hidden="{{loadingHidden}}">
-        加载中...
-    </loading>
 
 </view>

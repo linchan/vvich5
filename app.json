@@ -13,8 +13,7 @@
     "navigationBarTextStyle":"white",
     "navigationBarTitleText": "VVIC搜款网",
     "navigationBarBackgroundColor": "#292929",
-    "backgroundColor": "#F2f2f2",
-    "enablePullDownRefresh": true
+    "backgroundColor": "#F2f2f2"
   },
   "tabBar": {
     "color": "#6e6d6b",
@@ -43,5 +42,5 @@
       "text": "我的"
     }]
   },
-  "debug": true
+  "debug": false
 }
